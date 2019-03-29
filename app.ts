@@ -1,5 +1,5 @@
 let diecount: number = 0;
-let diearray: Array<String> = [];
+let diearray: Array<any> = [];
 
 class Dice {
     public newdiv: string;
@@ -52,5 +52,5 @@ $('#sumdice').click(() => {
     for (let dice of diearray) {
         sum += dice.value;
     }
-    console.log(sum);
+    console.log(sum);t
 })
