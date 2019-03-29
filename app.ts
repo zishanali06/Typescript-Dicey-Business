@@ -1,8 +1,9 @@
 let diecount: number = 0;
-let diearray: Array = [];
+let diearray: Array<String> = [];
 
 class Dice {
-    constructor(diecount) {
+    public newdiv: string;
+    constructor(public diecount: number) {
         this.newdiv = $('<div class="dice block"></div>');
         this.roll();
         this.diecount = diecount;
