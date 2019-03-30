@@ -2,7 +2,8 @@ let diecount: number = 0;
 let diearray: Array<any> = [];
 
 class Dice {
-    public newdiv: string;
+    public newdiv: JQuery;
+    private value: any = 0;
     constructor(public diecount: number) {
         this.newdiv = $('<div class="dice block"></div>');
         this.roll();
@@ -52,5 +53,5 @@ $('#sumdice').click(() => {
     for (let dice of diearray) {
         sum += dice.value;
     }
-    console.log(sum);t
+    console.log(sum);
 })
